@@ -22,7 +22,7 @@ export default function Login() {
 
     dispatch(loginSuccess(res.user));
     // Redirect based on role: admins -> users page, regular users -> dashboard
-    if (res.user.role === 'ADMIN') navigate('/users');
+    if (res.user.role === 'ADMIN') navigate('/');
     else navigate('/');
   };
 
